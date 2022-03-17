@@ -1,0 +1,19 @@
+.hand {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+
+    &.opponent .card {
+        margin-left: -80px;
+
+        &:first-child {
+            margin-left: 0px;
+        }        
+
+        img {
+            image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+            max-width: 120px;
+            height: auto;
+        }
+    } 
+}

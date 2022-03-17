@@ -1,0 +1,13 @@
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    min-height: 120px;
+}
+// Temporary styles for the discard pile go here
+.discard {
+    display: flex;
+    justify-content: center;
+    min-width: 160px;
+}

@@ -1,0 +1,13 @@
+.deck {
+    position: relative;
+    min-width: 120px;
+    padding: 20px;
+
+    & .card-back {        
+        image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+        max-width: 120px;
+        height: auto;
+        position: absolute;
+        left: 20px;
+    }
+}
