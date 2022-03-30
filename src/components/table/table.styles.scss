@@ -2,12 +2,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
+    margin: 40px 40px 60px 40px;
     min-height: 120px;
+    position: relative;
+
+    .card:nth-child(2n) {
+        position: relative;
+        width: 0px;
+        left: -125px;
+        top: 30px;
+    }
 }
-// Temporary styles for the discard pile go here
-.discard {
-    display: flex;
-    justify-content: center;
-    min-width: 160px;
+
+.message {
+    position: absolute;
+    font-size: 60px;
+    font-weight: 700;
+    color: #277fe4;
+    -webkit-text-stroke: white 2px;
+    text-transform: uppercase;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    text-align: center;  
+    transition: .3s ease;
+
+    &.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
 }

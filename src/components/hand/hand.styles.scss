@@ -16,4 +16,16 @@
             height: auto;
         }
     } 
+
+    .card {
+        box-shadow: -3px 3px 20px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &.large .card {
+        margin-left: -40px;
+
+        &:first-child {
+            margin-left: 0px;
+        }   
+    }
 }

@@ -3,7 +3,7 @@ import React from 'react';
 import './deck.styles.scss';
 import cardBackImage from '../../images/card-back.png';
 
-const Deck = ({ cards }) => (
+const Deck = ({ cards, children }) => (
     <div className="deck">
         {cards.map((card, i) => (
             <img 
@@ -16,6 +16,7 @@ const Deck = ({ cards }) => (
                 }}
             ></img>
         ))}        
+        {children}
     </div>
 )
 

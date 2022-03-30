@@ -1,20 +1,19 @@
-.deck {
+.discard {
+    display: flex;
+    justify-content: center;
+    min-width: 160px;
+}
+
+.discard-pile {
     position: relative;
     min-width: 120px;
     padding: 20px;
 
-    & .card-back {        
+    & .card-back-discarded {        
         image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
         max-width: 120px;
         height: auto;
         position: absolute;
         left: 20px;
-    }
-
-    & .trump {
-        position: absolute;
-        top: 75%;
-        left: 35%;
-        color: #fff;
     }
 }
